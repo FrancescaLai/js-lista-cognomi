@@ -10,8 +10,11 @@ var listaCognomi = [ "Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi" ];
 var cognome = prompt("Inserisci il tuo cognome");
 
 // 3. Inserisco il cognome dell'utente nell'array
-for (var i =0; i < listaCognomi.length; i++){
-  listaCognomi.push( cognome );
-  // 4. Stampo i cognomi in ordine alfabetico
-  console.log(listaCognomi.sort());
-}
+listaCognomi.push(cognome);
+
+// 4. Stampo i cognomi in ordine alfabetico
+console.log(listaCognomi.sort());
+
+// 5. Stampo la posizione reale contando a prtire da 1 (non l'indice che partirebbe da 0)
+var posizione = listaCognomi.indexOf(cognome);
+console.log("Il cognome " + cognome + " è in posizione " + posizione);
