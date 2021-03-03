@@ -16,5 +16,5 @@ listaCognomi.push(cognome);
 console.log(listaCognomi.sort());
 
 // 5. Stampo la posizione reale contando a prtire da 1 (non l'indice che partirebbe da 0)
-var posizione = listaCognomi.indexOf(cognome);
+var posizione = listaCognomi.indexOf(cognome)+1;
 console.log("Il cognome " + cognome + " è in posizione " + posizione);
