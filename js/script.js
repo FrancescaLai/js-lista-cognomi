@@ -11,7 +11,7 @@ var cognome = prompt("Inserisci il tuo cognome");
 
 // 3. Inserisco il cognome dell'utente nell'array
 for (var i =0; i < listaCognomi.length; i++){
-  listaCognomi.push = cognome;
+  listaCognomi.push( cognome );
   // 4. Stampo i cognomi in ordine alfabetico
   console.log(listaCognomi.sort());
 }
